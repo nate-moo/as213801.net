@@ -10,6 +10,16 @@ const data: cardData[] = [
     {title: "Peers", content: [["https://bgp.tools/as/215605", "AS215605 - Shams Hana"]]}
 ];
 
+interface article {
+    title: string;
+    uri: string;
+    content: string;
+}
+
+const articles: article[] = [
+    {title: "first", content: "Lorem Ipsum", uri: "/blog/1"},
+];
+
 export default function Home() {
     return (
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen py-10 pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
@@ -18,7 +28,7 @@ export default function Home() {
                 <h2>~ Making the internet my home one step at a time ~</h2>
             </header>
             <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-                <div className={"grid grid-cols-4 grid-rows-1 gap-3"}>
+                <div className={"grid grid-cols-4 grid-rows-1 gap-3 min-h-2"}>
                     {
                         data.map((stuff, index) => (
                             <div
@@ -39,6 +49,22 @@ export default function Home() {
                             </div>
                         ))
                     }
+                </div>
+                <div className={"p-4 text-center rounded-lg ml-auto mr-auto px-12 py-6"}
+                     style={{backgroundColor: "#350535", gridColumn: "2 / 4"}}>
+                    <h1 className={"text-3xl mb-6"}>
+                        Blog time!
+                    </h1>
+                    <ul>
+                        {
+                            articles.map((item, index: number) => (
+                                <li key={index} className={"flex"}>
+                                    <a href={item.uri} target={"_blank"} className={"underline"}>{item.title}</a>
+                                    <p>: {item.content}</p>
+                                </li>
+                            ))
+                        }
+                    </ul>
                 </div>
             </main>
             <footer>
