@@ -9,6 +9,8 @@ interface post {
     date: string,
 }
 
+export const runtime = 'edge';
+
 const posts: post[] = [
     {title: "Test", description: "testing", url: "/blog/1", date: "today", categories: ["weeee"], author: "Nate M"},
 ];
