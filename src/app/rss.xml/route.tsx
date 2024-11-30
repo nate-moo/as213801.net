@@ -46,6 +46,10 @@ export async function GET() {
 
 
     //     <atom:link href="" rel="alternate" type="application/rss+xml" />
+    // <lastBuildDate>${d.toString()}</lastBuildDate>
+
+    // const d = new Date();
+
     const rss = `
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -58,18 +62,17 @@ export async function GET() {
     <description><![CDATA[My adventures through wired protocol 6 and anything else I can get my grubby hands onto]]></description>
     <link>https://www.as213801.net/rss.xml</link>
     <generator>static-rss-generator</generator>
-    <lastBuildDate>${Date().toString()}</lastBuildDate>
+    
     ${posts.map(
         (item) => `
-    <item>
-      <title><![CDATA[${item.title}]]></title>
-      <description><![CDATA[${item.description}]]></description>
-      <link>${item.url}</link>
-      <guid isPermaLink="true">${item.url}</guid>
-      <pubDate>${item.date}</pubDate>
-    </item>`
-    )
-        .join("\n")}
+            <item>
+              <title><![CDATA[${item.title}]]></title>
+              <description><![CDATA[${item.description}]]></description>
+              <link>${item.url}</link>
+              <guid isPermaLink="true">${item.url}</guid>
+              <pubDate>${item.date}</pubDate>
+            </item>`
+    ).join("\n")}
   </channel>
 </rss>
   `.trim();
