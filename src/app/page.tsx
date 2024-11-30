@@ -28,7 +28,7 @@ export default function Home() {
                 <h2>~ Making the internet my home one step at a time ~</h2>
             </header>
             <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-                <div className={"grid grid-cols-4 grid-rows-1 gap-3 min-h-2"}>
+                <div className={"grid md:grid-cols-4 md:grid-rows-1 grid-cols-1 gap-3 min-h-2 mx-8"}>
                     {
                         data.map((stuff, index) => (
                             <div
@@ -50,7 +50,7 @@ export default function Home() {
                         ))
                     }
                 </div>
-                <div className={"p-4 text-center rounded-lg ml-auto mr-auto px-12 py-6"}
+                <div className={"p-4 text-center rounded-lg ml-auto mr-auto"}
                      style={{backgroundColor: "#350535", gridColumn: "2 / 4"}}>
                     <h1 className={"text-3xl mb-6"}>
                         Blog time!
