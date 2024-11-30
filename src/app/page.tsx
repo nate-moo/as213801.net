@@ -23,7 +23,9 @@ export default function Home() {
                         data.map((stuff, index) => (
                             <div
                                 key={index}
-                                className={"p-4 text-center outline outline-1 rounded-lg outline-gray-900 bg-gray-900"}>
+                                className={"p-4 text-center rounded-lg"}
+                                style={{backgroundColor: "#350535"}}
+                            >
                                 <h1 className={"text-3xl"}>
                                     {stuff.title}
                                 </h1>
