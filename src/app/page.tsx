@@ -55,6 +55,9 @@ export default function Home() {
                     </div>
                 </div>
             </main>
+            <footer>
+                <p>😳 issa foot 😳</p>
+            </footer>
         </div>
     );
 }
