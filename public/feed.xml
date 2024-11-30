@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     version="2.0">
+
+    <channel>
+        <title><![CDATA[Nate's goofy blog]]></title>
+        <description><![CDATA[My adventures through wired protocol 6 and anything else I can get my grubby hands onto]]></description>
+        <link>https://www.as213801.net/rss.xml</link>
+        <generator>static-rss-generator</generator>
+
+        <item>
+            <title><![CDATA[Test]]></title>
+            <description><![CDATA[testing]]></description>
+            <link>/blog/1</link>
+            <guid isPermaLink="true">/blog/1</guid>
+            <pubDate>today</pubDate>
+        </item>
+
+        <item>
+            <title><![CDATA[Test1]]></title>
+            <description><![CDATA[testing]]></description>
+            <link>/blog/1</link>
+            <guid isPermaLink="true">/blog/1</guid>
+            <pubDate>today</pubDate>
+        </item>
+    </channel>
+</rss>

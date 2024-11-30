@@ -50,7 +50,7 @@ export async function GET() {
 
     // const d = new Date();
 
-    const rss = `
+        const rss = `
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -62,7 +62,7 @@ export async function GET() {
     <description><![CDATA[My adventures through wired protocol 6 and anything else I can get my grubby hands onto]]></description>
     <link>https://www.as213801.net/rss.xml</link>
     <generator>static-rss-generator</generator>
-    
+
     ${posts.map(
         (item) => `
             <item>
@@ -75,7 +75,7 @@ export async function GET() {
     ).join("\n")}
   </channel>
 </rss>
-  `.trim();
+    `.trim();
 
     return new Response(rss, {
         headers: {
