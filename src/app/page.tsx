@@ -1,8 +1,14 @@
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-    title: 'AS213801',
+interface cardData {
+    title: string;
+    content: string[][];
 }
+
+const data: cardData[] = [
+    {title: "Points of Presence", content: [["https://quprawholesale.com/", "Shams Hana (Qupra DC) - Netherlands 🇳🇱"]]},
+    {title: "Prefixes", content: [["https://bgp.tools/prefix/2a12:bec4:15f0::/44", "2a12:bec4:15f0::/44"]]},
+    {title: "Upstreams", content: [["https://bgp.tools/as/215605", "AS215605 - Shams Hana"]]},
+    {title: "Peers", content: [["https://bgp.tools/as/215605", "AS215605 - Shams Hana"]]}
+];
 
 export default function Home() {
     return (
@@ -13,46 +19,24 @@ export default function Home() {
             </header>
             <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                 <div className={"grid grid-cols-4 grid-rows-1 gap-3"}>
-                    <div className={"p-4 text-center outline outline-1 rounded-lg"}>
-                        <h1 className={"text-3xl"}>
-                            Points Of Presence
-                        </h1>
-                        <ul className={"underline"}>
-                            <li>
-                                <a href={"https://quprawholesale.com/"} target={"_blank"}>Shams Hana (Qupra DC) - Netherlands 🇳🇱</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className={"p-4 text-center outline outline-1 rounded-lg"}>
-                        <h1 className={"text-3xl"}>
-                            Prefixes
-                        </h1>
-                        <ul className={"underline"}>
-                            <li>
-                                <a href={"https://bgp.tools/prefix/2a12:bec4:15f0::/44"} target={"_blank"}>2a12:bec4:15f0::/44</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className={"p-4 text-center outline outline-1 rounded-lg"}>
-                        <h1 className={"text-3xl"}>
-                            Upstreams
-                        </h1>
-                        <ul className={"underline"}>
-                            <li>
-                                <a href={"https://bgp.tools/as/215605"} target={"_blank"}>AS215605 - Shams Hana</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className={"p-4 text-center outline outline-1 rounded-lg"}>
-                        <h1 className={"text-3xl"}>
-                            Peers
-                        </h1>
-                        <ul className={"underline"}>
-                            <li>
-                                <a href={"https://bgp.tools/as/215605"} target={"_blank"}>AS215605 - Shams Hana</a>
-                            </li>
-                        </ul>
-                    </div>
+                    {
+                        data.map((stuff, index) => (
+                            <div
+                                key={index}
+                                className={"p-4 text-center outline outline-1 rounded-lg outline-gray-900 bg-gray-900"}>
+                                <h1 className={"text-3xl"}>
+                                    {stuff.title}
+                                </h1>
+                                <ul className={"underline"}>
+                                    {
+                                        stuff.content.map((item: string[], index: number) => (
+                                            <li key={index}><a href={item[0]} target={"_blank"}>{item[1]}</a></li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+                        ))
+                    }
                 </div>
             </main>
             <footer>
@@ -61,3 +45,15 @@ export default function Home() {
         </div>
     );
 }
+
+// function card(title: string, content: [string[]]) {
+//     return (
+//
+//     )
+// }
+
+// function links(link: string, content: string) {
+//     return (
+//             <li><a href={link} target={"_blank"}>{content}</a></li>
+//     )
+// }
