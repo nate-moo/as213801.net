@@ -1,31 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://purl.org/dc/elements/1.1/ ">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title><![CDATA[Nate's goofy blog]]></title>
-        <description>
-            <![CDATA[My adventures through wired protocol 6 and anything else I can get my grubby hands onto]]></description>
+        <description><![CDATA[My adventures through wired protocol 6 and anything else I can get my grubby hands onto]]></description>
         <link>https://www.as213801.net</link>
         <generator>RSS for Node and Next.js</generator>
-        <lastBuildDate>Sat, 30 Nov 2024 23:59:56 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Dec 2024 00:12:07 GMT</lastBuildDate>
         <atom:link href="https://www.as213801.net/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 30 Nov 2024 23:59:56 GMT</pubDate>
+        <pubDate>Sun, 01 Dec 2024 00:12:07 GMT</pubDate>
         <copyright><![CDATA[Copyright 2024, Nate Moore]]></copyright>
         <language><![CDATA[en-US]]></language>
         <managingEditor><![CDATA[(Nate Moore)]]></managingEditor>
         <webMaster><![CDATA[(Nate Moore)]]></webMaster>
         <ttl>60</ttl>
-        <item>
-            <title><![CDATA[Test]]></title>
-            <description><![CDATA[testing]]></description>
-            <link>/blog/1</link>
-            <guid isPermaLink="true">/blog/1</guid>
-            <category><![CDATA[weeee]]></category>
-            <dc:creator><![CDATA[Nate M]]></dc:creator>
-            <pubDate>Invalid Date</pubDate>
-        </item>
     </channel>
 </rss>

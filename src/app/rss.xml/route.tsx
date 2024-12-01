@@ -10,7 +10,15 @@ interface post {
 }
 
 const posts: post[] = [
-    {title: "Test", description: "testing", url: "/blog/1", date: "today", categories: ["weeee"], author: "Nate M"},
+    // {title: "Test", description: "testing", url: "/blog/1", date: "today", categories: ["weeee"], author: "Nate M"},
+    // {
+    //     title: "BGPing my way into the internet",
+    //     description: "Learning about the Border Gateway Protocol, and actually utilizing it with my own IP space",
+    //     author: "Nate M",
+    //     categories: ["Networking"],
+    //     url: "/blog/bgping-my-way",
+    //     date: "NA"
+    // }
 ];
 
 export async function GET() {
