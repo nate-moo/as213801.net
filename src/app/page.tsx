@@ -17,7 +17,7 @@ interface article {
 }
 
 const articles: article[] = [
-    {title: "first", content: "Lorem Ipsum", uri: "/blog/1"},
+
 ];
 
 export default function Home() {
