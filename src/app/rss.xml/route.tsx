@@ -21,6 +21,8 @@ const posts: post[] = [
     // }
 ];
 
+export const runtime = 'edge';
+
 export async function GET() {
     const feed = new RSS({
         title: 'Nate\'s goofy blog',
