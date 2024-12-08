@@ -57,13 +57,29 @@ export default function bgpingMyWay() {
                 </p>
                 <br/>
                 <h2 className={"text-3xl text-center"}>
+                    What I&#39;ve done so far
+                </h2>
+                <p>
+                    So far, I have set up 2 independant routers each advertising a seperate block of my allocated IP space.
+                    Since I have yet to figure out how to connect the two routers for them to share routes, this was the easiest
+                    way that I can have 2 presences without diving deep into the route tunneling just yet. Utilizing the local points
+                    of presence I can set up a wireguard tunnel to use my own IP space without needing to be directly connected to the
+                    bgp router! Currently I have it setup to connect me with a subnet size of /56 and a friend with as of now
+                    a single address to the IPv6 internet! I am planning to find closer ways to setup sessions because currently
+                    the minimum latency I can get is ~40ms. If I can get a session setup in the same state as me, I might be able
+                    to get that down to &lt;10ms of latency. There are some behind the scenes shenanigans going on that might get me
+                    &lt;1ms latency but that is yet to be fully figured out.
+                </p>
+                <br/>
+                <h2 className={"text-3xl text-center"}>
                     Closing remarks
                 </h2>
                 <p>
                     I have so much more to learn, as I said before I am just barely scratching the surface of this system.
-                    There is a list of different things that I want to figure out still, setting up multihoming so I can have
-                    a server located a bit closer to me than the netherlands, as well as more diverse peers and routes.
-                    Maybe even getting the possibility of leasing a small block of IPv4 addresses to increase my presence.
+                    There is a list of different things that I want to figure out still, setting up multihoming so I can
+                    connect the 2 points of presence together and route between them without requiring them be completely
+                    seperate (like they are now), as well as more diverse peers and routes. Maybe even getting the possibility
+                    of leasing a small block of IPv4 addresses to increase my presence.
                 </p>
             </div>
         </div>
