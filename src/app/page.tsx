@@ -29,7 +29,11 @@ interface article {
 }
 
 const articles: article[] = [
-
+    {
+        title: "BGP Part 1",
+        uri: "/blog/bgping-my-way",
+        content: "Learning about the Border Gateway Protocol, and actually utilizing it with my own IP space"
+    }
 ];
 
 export default function Home() {
@@ -61,23 +65,24 @@ export default function Home() {
                             </div>
                         ))
                     }
+                    <div className={"p-4 text-center rounded-lg bg-[#350535]  md:col-span-2 md:col-start-2 col-span-1 col-start-1"}>
+                        <h1 className={"text-3xl mb-6"}>
+                            Blog time!
+                        </h1>
+                        <ul>
+                            {
+                                articles.map((item, index: number) => (
+                                    <li key={index} className={"flex"}>
+                                        <a href={item.uri} target={"_blank"}
+                                           className={"underline text-nowrap"}>{item.title}: </a>
+                                        <p className={"ml-0.5 text-wrap"}>{item.content}</p>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
                 </div>
-                <div className={"p-4 text-center rounded-lg ml-auto mr-auto"}
-                     style={{backgroundColor: "#350535", gridColumn: "2 / 4"}}>
-                    <h1 className={"text-3xl mb-6"}>
-                        Blog time!
-                    </h1>
-                    <ul>
-                        {
-                            articles.map((item, index: number) => (
-                                <li key={index} className={"flex"}>
-                                    <a href={item.uri} target={"_blank"} className={"underline"}>{item.title}</a>
-                                    <p>: {item.content}</p>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
+
             </main>
             <footer className={"text-center w-full"}>
                 <a href={"/feed.xml"} className={"text-center underline"}>rss feed</a>
