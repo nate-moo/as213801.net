@@ -4,19 +4,19 @@
         <description><![CDATA[My adventures through wired protocol 6 and anything else I can get my grubby hands onto]]></description>
         <link>https://www.as213801.net</link>
         <generator>RSS for Node and Next.js</generator>
-        <lastBuildDate>Mon, 09 Dec 2024 19:29:52 GMT</lastBuildDate>
-        <atom:link href="https://www.as213801.net/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 09 Dec 2024 19:29:52 GMT</pubDate>
+        <lastBuildDate>Mon, 09 Dec 2024 19:41:07 GMT</lastBuildDate>
+        <atom:link href="https://www.as213801.net/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 09 Dec 2024 19:41:07 GMT</pubDate>
         <copyright><![CDATA[Copyright 2024, Nate Moore]]></copyright>
         <language><![CDATA[en-US]]></language>
-        <managingEditor><![CDATA[(Nate Moore)]]></managingEditor>
-        <webMaster><![CDATA[(Nate Moore)]]></webMaster>
+        <managingEditor><![CDATA[blog@as213801.net (Nate M)]]></managingEditor>
+        <webMaster><![CDATA[blog@as213801.net (Nate M)]]></webMaster>
         <ttl>60</ttl>
         <item>
             <title><![CDATA[BGPing my way into the internet]]></title>
             <description><![CDATA[Learning about the Border Gateway Protocol, and actually utilizing it with my own IP space]]></description>
-            <link>/blog/bgping-my-way</link>
-            <guid isPermaLink="true">/blog/bgping-my-way</guid>
+            <link>https://as213801.net/blog/bgping-my-way</link>
+            <guid isPermaLink="true">https://as213801.net/blog/bgping-my-way</guid>
             <category><![CDATA[Networking]]></category>
             <dc:creator><![CDATA[Nate M]]></dc:creator>
             <pubDate>Mon, 09 Dec 2024 07:00:00 GMT</pubDate>
