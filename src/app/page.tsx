@@ -85,7 +85,7 @@ export default function Home() {
 
             </main>
             <footer className={"text-center w-full"}>
-                <a href={"/feed.xml"} className={"text-center underline"}>rss feed</a>
+                <a href={"/rss.xml"} className={"text-center underline"}>rss feed</a>
                 <p>😳 issa footr 😳</p>
 
             </footer>

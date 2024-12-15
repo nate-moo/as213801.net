@@ -16,7 +16,7 @@ const posts: post[] = [
         description: "Learning about the Border Gateway Protocol, and actually utilizing it with my own IP space",
         author: "Nate M",
         categories: ["Networking"],
-        url: "/blog/bgping-my-way",
+        url: "https://as213801.net/blog/bgping-my-way",
         date: "12-09-2024"
     }
 ];
@@ -28,10 +28,10 @@ export async function GET() {
         title: 'Nate\'s goofy blog',
         description: "My adventures through wired protocol 6 and anything else I can get my grubby hands onto",
         generator: 'RSS for Node and Next.js',
-        feed_url: 'https://www.as213801.net/rss.xml',
+        feed_url: 'https://www.as213801.net/feed.xml',
         site_url: 'https://www.as213801.net',
-        managingEditor: '(Nate Moore)',
-        webMaster: '(Nate Moore)',
+        managingEditor: 'blog@as213801.net (Nate M)',
+        webMaster: 'blog@as213801.net (Nate M)',
         copyright: `Copyright ${new Date().getFullYear().toString()}, Nate Moore`,
         language: 'en-US',
         pubDate: new Date().toUTCString(),
