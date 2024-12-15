@@ -41,7 +41,7 @@ export default function Home() {
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen py-10 pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
             <header className="text-center text-xl leading-tight">
                 <h1 className={"text-2xl"}> <a href={"https://bgp.tools/as/213801"} className={"underline"} target={"_blank"}> AS213801</a> - Nate M</h1>
-                <h2>~ Making the internet my home one step at a time ~</h2>
+                <div className={"subtitleTilda"}><h2>Making the internet my home one step at a time</h2></div>
             </header>
             <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                 <div className={"grid md:grid-cols-4 md:grid-rows-1 grid-cols-1 gap-3 min-h-2 mx-8"}>

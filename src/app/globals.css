@@ -21,3 +21,30 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+div.subtitleTilda > h2 {
+  text-wrap: balance;
+  width: auto;
+}
+
+div.subtitleTilda {
+  display: inline-flex;
+  margin-inline: 4rem;
+}
+
+div.subtitleTilda::after {
+  content: '~';
+  /*text-align: left;*/
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.25rem;
+}
+
+div.subtitleTilda::before {
+  content: '~';
+  /*text-align: right;*/
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0.25rem;
+
+}
