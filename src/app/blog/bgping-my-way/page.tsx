@@ -13,7 +13,7 @@ export default function bgpingMyWay() {
             className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen py-10 pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
             <div className={"md:inline-flex w-full md:mt-4 text-center mt-16"}>
                 <a href={"/"}> <h1 className={"text-1xl md:ml-4 underline lg:block block"}>Web Home</h1> </a>
-                <h1 className={"text-4xl ml-auto mr-auto mx-2 text-center"}>BGPing my way into the internet</h1>
+                <h1 className={"text-4xl ml-auto mr-auto mx-2 text-center"}>{String(metadata.title)}</h1>
                 <a href={"/blog"}> <h1 className={"text-1xl md:mr-4 underline lg:block block"}>Blog Home</h1> </a>
             </div>
 
@@ -82,6 +82,8 @@ export default function bgpingMyWay() {
                     of leasing a small block of IPv4 addresses to increase my presence.
                 </p>
             </div>
+
+            <h2><a href={"/blogPDF/bgping-my-way.pdf"} className={"underline"}>PDF Version</a></h2>
         </div>
 )
 }

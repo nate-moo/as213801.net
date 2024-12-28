@@ -14,11 +14,11 @@ const data: cardData[] = [
         ]},
     {title: "Upstreams", content: [
             ["https://bgp.tools/as/215605", "AS215605 - Shams Hana"],
-            ["https://bgp.tools/as/393577", "AS215605 - Tritan Dev."]
+            ["https://bgp.tools/as/393577", "AS393577 - Tritan Dev."]
         ]},
     {title: "Main Peers", content: [
             ["https://bgp.tools/as/215605", "AS215605 - Shams Hana"],
-            ["https://bgp.tools/as/393577", "AS215605 - Tritan Dev."]
+            ["https://bgp.tools/as/393577", "AS393577 - Tritan Dev."]
         ]}
 ];
 
