@@ -5,19 +5,20 @@ interface cardData {
 
 const data: cardData[] = [
     {title: "Points of Presence", content: [
-            ["https://quprawholesale.com/", "Shams Hana (Qupra DC) - Netherlands 🇳🇱"],
+            ["https://quprawholesale.com/", "Shams Hanna (Qupra DC) - Netherlands 🇳🇱"],
             ["https://tritan.gg/", "Tritan Intenet - Kansas City 🇺🇸"]
         ]},
     {title: "Prefixes", content: [
             ["https://bgp.tools/prefix/2a12:bec4:15f0::/45", "2a12:bec4:15f0::/45"],
-            ["https://bgp.tools/prefix/2a12:bec4:15f8::/45", "2a12:bec4:15f8::/45"]
+            ["https://bgp.tools/prefix/2a12:bec4:15f8::/45", "2a12:bec4:15f8::/45"],
+            ["https://bgp.tools/prefix/2602:f766:b::/48", "2602:f766:b::/48"]
         ]},
     {title: "Upstreams", content: [
-            ["https://bgp.tools/as/215605", "AS215605 - Shams Hana"],
+            ["https://bgp.tools/as/215605", "AS215605 - Shams Hanna"],
             ["https://bgp.tools/as/393577", "AS393577 - Tritan Dev."]
         ]},
     {title: "Main Peers", content: [
-            ["https://bgp.tools/as/215605", "AS215605 - Shams Hana"],
+            ["https://bgp.tools/as/215605", "AS215605 - Shams Hanna"],
             ["https://bgp.tools/as/393577", "AS393577 - Tritan Dev."]
         ]}
 ];
