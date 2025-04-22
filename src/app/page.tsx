@@ -23,6 +23,25 @@ const data: cardData[] = [
         ]}
 ];
 
+interface project {
+    title: string;
+    uri: string;
+    content: string;
+}
+
+const projects: project[] = [
+    {
+        title: "Never Ending Homelab",
+        uri: "/projects/homelab",
+        content: "My homelabbing adventures beginning from an old laptop to multiple servers running under my bed"
+    },
+    {
+        title: "HomeWideWeb",
+        uri: "/projects/HomeWideWeb",
+        content: "How I learned about the intricacies of the internet by simulating it in my own home!"
+    }
+];
+
 interface article {
     title: string;
     uri: string;
@@ -66,13 +85,29 @@ export default function Home() {
                             </div>
                         ))
                     }
-                    <div className={"p-4 text-center rounded-lg bg-[#350535]  md:col-span-2 md:col-start-2 col-span-1 col-start-1"}>
+                    <div className={"p-4 text-center rounded-lg bg-[#350535]  md:col-span-2 md:col-start-1 col-span-1 col-start-1"}>
                         <h1 className={"text-3xl mb-6"}>
-                            Blog time!
+                            Blog
                         </h1>
                         <ul>
                             {
                                 articles.map((item, index: number) => (
+                                    <li key={index} className={"flex"}>
+                                        <a href={item.uri} target={"_blank"}
+                                           className={"underline text-nowrap"}>{item.title}: </a>
+                                        <p className={"ml-0.5 text-wrap"}>{item.content}</p>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                    <div className={"p-4 text-center rounded-lg bg-[#350535]  md:col-span-2 md:col-start-3 col-span-1 col-start-1"}>
+                        <h1 className={"text-3xl mb-6"}>
+                            Projects
+                        </h1>
+                        <ul>
+                            {
+                                projects.map((item, index: number) => (
                                     <li key={index} className={"flex"}>
                                         <a href={item.uri} target={"_blank"}
                                            className={"underline text-nowrap"}>{item.title}: </a>
