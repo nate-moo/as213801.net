@@ -15,11 +15,13 @@ const data: cardData[] = [
         ]},
     {title: "Upstreams", content: [
             ["https://bgp.tools/as/215605", "AS215605 - Shams Hanna"],
-            ["https://bgp.tools/as/393577", "AS393577 - Tritan Dev."]
+            ["https://bgp.tools/as/393577", "AS393577 - Tritan Internet"],
+            ["https://bgp.tools/as/401538", "AS401538 - Nova 86"]
         ]},
     {title: "Main Peers", content: [
             ["https://bgp.tools/as/215605", "AS215605 - Shams Hanna"],
-            ["https://bgp.tools/as/393577", "AS393577 - Tritan Dev."]
+            ["https://bgp.tools/as/393577", "AS393577 - Tritan Internet"],
+            ["https://bgp.tools/as/401538", "AS401538 - Nova 86"]
         ]}
 ];
 
@@ -93,15 +95,3 @@ export default function Home() {
         </div>
     );
 }
-
-// function card(title: string, content: [string[]]) {
-//     return (
-//
-//     )
-// }
-
-// function links(link: string, content: string) {
-//     return (
-//             <li><a href={link} target={"_blank"}>{content}</a></li>
-//     )
-// }
