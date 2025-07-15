@@ -18,10 +18,11 @@ const data: cardData[] = [
             ["https://bgp.tools/as/393577", "AS393577 - Tritan Internet"],
             ["https://bgp.tools/as/401538", "AS401538 - Nova 86"]
         ]},
-    {title: "Main Peers", content: [
+    {title: "Main Peers & IXs", content: [
             ["https://bgp.tools/as/215605", "AS215605 - Shams Hanna"],
             ["https://bgp.tools/as/393577", "AS393577 - Tritan Internet"],
-            ["https://bgp.tools/as/401538", "AS401538 - Nova 86"]
+            ["https://bgp.tools/as/401538", "AS401538 - Nova 86"],
+            ["https://bgp.tools/ixp/F4IX%20MCI", "IX4378 - F4IX MCI"]
         ]}
 ];
 
