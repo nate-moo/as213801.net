@@ -4,21 +4,22 @@ interface cardData {
 }
 
 const data: cardData[] = [
-    {title: "Points of Presence", content: [
+    {title: "POPs", content: [
             ["https://quprawholesale.com/", "Shams Hanna (Qupra DC) - Netherlands 🇳🇱"],
             ["https://tritan.gg/", "Tritan Intenet - Kansas City 🇺🇸"]
         ]},
     {title: "Prefixes", content: [
             ["https://bgp.tools/prefix/2a12:bec4:15f0::/45", "2a12:bec4:15f0::/45"],
             ["https://bgp.tools/prefix/2a12:bec4:15f8::/45", "2a12:bec4:15f8::/45"],
-            ["https://bgp.tools/prefix/2602:f766:b::/48", "2602:f766:b::/48"]
+            ["https://bgp.tools/prefix/2602:f766:b::/48", "2602:f766:b::/48"],
+            ["https://bgp.tools/prefix/44.30.111.0/24", "44.30.111.0/24"]
         ]},
     {title: "Upstreams", content: [
             ["https://bgp.tools/as/215605", "AS215605 - Shams Hanna"],
             ["https://bgp.tools/as/393577", "AS393577 - Tritan Internet"],
             ["https://bgp.tools/as/401538", "AS401538 - Nova 86"]
         ]},
-    {title: "Main Peers & IXs", content: [
+    {title: "Peers/IX", content: [
             ["https://bgp.tools/as/215605", "AS215605 - Shams Hanna"],
             ["https://bgp.tools/as/393577", "AS393577 - Tritan Internet"],
             ["https://bgp.tools/as/401538", "AS401538 - Nova 86"],
