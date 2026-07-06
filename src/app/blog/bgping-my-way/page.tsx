@@ -21,6 +21,7 @@ export default function bgpingMyWay() {
                 <h2 className={"text-3xl text-center"}>
                     What even is BGP?
                 </h2>
+                <h3>Dec 9, 2024</h3>
                 <p>
                     BGP is, at a very high level, one of the main backbones of the internet. BGP is a network of
                     Autonomous Systems (AS&#39;s) that have agreed to connect to each other and share resources
