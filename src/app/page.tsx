@@ -5,7 +5,7 @@ interface cardData {
 
 const data: cardData[] = [
     {title: "POPs", content: [
-            ["https://quprawholesale.com/", "Shams Hanna (Qupra DC) - Netherlands 🇳🇱"],
+            ["https://quprawholesale.com/", "Shams Hanna (Qupra DC v6 only) - Netherlands 🇳🇱"],
             ["https://tritan.gg/", "Tritan Intenet - Kansas City 🇺🇸"]
         ]},
     {title: "Prefixes", content: [
